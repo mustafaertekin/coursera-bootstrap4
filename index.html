@@ -44,8 +44,7 @@
                     </li>
                 </ul>
                 <span class="navbar-text">
-                    <a href="" data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-sign-in"></span> Login</a>
+                    <a id="loginButton"><span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
         </div>
@@ -57,7 +56,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Login </h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button id="loginCancelX" type="button" class="close">&times;</button>
             </div>
             <div class="modal-body">
                 <form class="form-inline">
@@ -77,7 +76,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                <button id="loginCancel" type="button" class="btn btn-default btn-sm">Cancel</button>
                 <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
             </div>
         </div>
@@ -89,7 +88,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h3 class="modal-title">Reserve a Table </h3>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button id="reserveCancelX" type="button" class="close" >&times;</button>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
@@ -138,7 +137,7 @@
                             
                             <div class="row card-block">
                                 <div class="offset-md-2">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    <button id="reserveCancel" type="button" class="btn btn-default" >Cancel</button>
                                     <button type="submit" class="btn btn-primary">Reserve</button>
                                 </div>
                             </div>
@@ -161,8 +160,8 @@
                 </div>
 
                 <div class="col-sm-6 col-md-3 align-self-center">
-                    <a type="button" href="#reserveTableForm" class="btn btn-sm btn-warning btn-block" 
-                    data-toggle="modal" data-target="#reserveTableModal">Reserve Table</a>
+                    <a id="reserveButton" type="button" href="#reserveTableForm" class="btn btn-sm btn-warning btn-block" 
+                    >Reserve Table</a>
                 </div>
             </div>
         </div>
